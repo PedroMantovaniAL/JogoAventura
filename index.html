@@ -5,6 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>História Interativa: Aventura e Investigação</title>
+    <style>
+        /* Estilo geral */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        .choice {
+            margin: 20px 0;
+        }
+
+        .btn-proximo {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn-proximo:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilo de fundo para cada capítulo */
+        .passo {
+            display: none;
+            padding: 50px;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ativo {
+            display: block;
+        }
+
+        /* Imagens de fundo para os capítulos */
+        #passo-1 {
+            background-image: url('images/capitulo1.png'); /* Insira a URL da imagem para o capítulo 1 */
+        }
+
+        #passo-2A {
+            background-image: url('imagens/capitulo2A.jpg'); /* Insira a URL da imagem para o capítulo 2A */
+        }
+
+        #passo-2B {
+            background-image: url('imagens/capitulo2B.jpg'); /* Insira a URL da imagem para o capítulo 2B */
+        }
+
+        #passo-3A {
+            background-image: url('imagens/capitulo3A.jpg'); /* Insira a URL da imagem para o capítulo 3A */
+        }
+
+        #passo-3B {
+            background-image: url('imagens/capitulo3B.jpg'); /* Insira a URL da imagem para o capítulo 3B */
+        }
+
+        #passo-4A {
+            background-image: url('imagens/capitulo4A.jpg'); /* Insira a URL da imagem para o capítulo 4A */
+        }
+
+        #passo-4B {
+            background-image: url('imagens/capitulo4B.jpg'); /* Insira a URL da imagem para o capítulo 4B */
+        }
+
+        #passo-5A {
+            background-image: url('images/capitulo5A.jpg'); /* Insira a URL da imagem para o capítulo 5A */
+        }
+
+        #passo-5B {
+            background-image: url('imagens/capitulo5B.jpg'); /* Insira a URL da imagem para o capítulo 5B */
+        }
+
+        #passo-6A {
+            background-image: url('imagens/capitulo6A.jpg'); /* Insira a URL da imagem para o capítulo 6A */
+        }
+
+        #passo-6B {
+            background-image: url('imagens/capitulo6B.jpg'); /* Insira a URL da imagem para o capítulo 6B */
+        }
+
+        #fim {
+            background-image: url('imagens/fim.jpg'); /* Insira a URL da imagem para a página de fim */
+        }
+    </style>
 </head>
 <body>
     <h1>História Interativa: Aventura e Investigação</h1>
